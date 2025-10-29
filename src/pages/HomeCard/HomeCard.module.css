@@ -1,0 +1,56 @@
+.home-card {
+    width: 80vw;
+    height: 18vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    /* 视觉样式 */
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-card:hover {
+    transform: scale(0.995);
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    flex: 1;
+    font-size: 5vw;
+    font-weight: 600;
+    color: #333;
+    padding-left: 1rem;
+    width: 10vw;
+    margin: 5vw;
+}
+
+/*.card-title span {*/
+/*    text-decoration: none;*/
+/*}*/
+
+/* 图片区域靠右，并保持图片大小比例 */
+.card-img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    width: 15vh;
+    height: 15vh;
+
+
+}
+
+/* 控制图片大小和右边距 */
+.card-img img {
+    width: 100%;
+    height: 100%;
+    margin-right: 10%;
+    border-radius: 10px;
+    object-fit: contain;
+
+}

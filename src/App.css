@@ -1,0 +1,30 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url("../public/images/body-background.png");
+  background-size: cover;
+}
+
+.app-header {
+  width: 100vw;
+  height: 10vh;
+  background-color: rgba(81, 85, 128, 0.5);
+}
+
+.app-body {
+  width: 100vw;
+  height: 90vh;
+  overflow-y: scroll;
+}
+
+.app-footer {
+  width: 100vw;
+  height: 10vh;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.app-body::-webkit-scrollbar {
+  display: none;
+}

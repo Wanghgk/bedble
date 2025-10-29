@@ -1,0 +1,71 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    background-color: rgba(240, 242, 245, 0.5);
+    box-sizing: border-box;
+}
+
+.cards-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vh;
+    box-sizing: border-box;
+    padding: 2vh 0;
+    height: 55vh;
+    overflow-y: scroll;
+}
+
+.cards-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* 蓝牙按钮容器 */
+.connect-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:5vh 0;
+    height: 15vh;
+}
+
+/* 按钮样式 */
+.connect-btn {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    border: none;
+    padding: 4vh 7vw;
+    border-radius: 10vh;
+    font-size: 5vw;
+    max-font-size: 5vh;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
+
+.connect-btn:hover {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    transform: translateY(-1vh);
+}
+
+.btn-disabled {
+    background: #9ca3af;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+.status-list {
+    margin-top: 3vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+}
+
+.status-text {
+    color: #10b981;
+    font-size: 5vw;
+    max-font-size: 5vh;
+}
