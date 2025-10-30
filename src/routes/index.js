@@ -1,6 +1,7 @@
 import React from "react";
 import DeskLED from "../pages/DeskLED/DeskLED";
 import Home from "../pages/Home/Home";
+import CharLED from "../pages/CharLED/CharLED";
 
 export default [
     {
@@ -10,6 +11,10 @@ export default [
     {
         path: '/deskled',
         element: <DeskLED/>
+    },
+    {
+        path: '/charled',
+        element: <CharLED/>
     }
     // {
     //     path: '/',

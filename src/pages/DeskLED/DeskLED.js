@@ -90,7 +90,7 @@ export default function DeskLED() {
                         onChange={handleChange}
                         orient="vertical"
                     />
-                    <span>R</span>
+                    {/*<span>R</span>*/}
                 </div>
                 <div className={[`${Style["slider-wrapper"]}`, `${Style["green"]}`].join(' ')}>
                     <input
@@ -103,7 +103,7 @@ export default function DeskLED() {
                         onChange={handleChange}
                         orient="vertical"
                     />
-                    <span>G</span>
+                    {/*<span>G</span>*/}
                 </div>
                 <div className={[`${Style["slider-wrapper"]}`, `${Style["blue"]}`].join(' ')}>
                     <input
@@ -116,24 +116,22 @@ export default function DeskLED() {
                         onChange={handleChange}
                         orient="vertical"
                     />
-                    <span>B</span>
+                    {/*<span>B</span>*/}
                 </div>
             </div>
 
-            <div
-                className={Style["color-preview"]}
-                style={{backgroundColor: `rgb(${rgb.r}, ${rgb.g}, ${rgb.b})`}}
-            ></div>
-
             <div className={Style["preset-container"]}>
                 {presetColors.map((c, i) => (
-                    <div
-                        key={i}
-                        className={Style["preset-color"]}
-                        style={{backgroundColor: `rgb(${c.rgb[0]}, ${c.rgb[1]}, ${c.rgb[2]})`}}
-                        onClick={() => applyPreset(...c.rgb)}
-                        title={c.name}
-                    ></div>
+                    <div>
+                        <div
+                            key={i}
+                            className={Style["preset-color"]}
+                            style={{backgroundColor: `rgb(${c.rgb[0]}, ${c.rgb[1]}, ${c.rgb[2]})`}}
+                            onClick={() => applyPreset(...c.rgb)}
+                            title={c.name}
+                        ></div>
+                        <span>{c.name}</span>
+                    </div>
                 ))}
             </div>
         </div>

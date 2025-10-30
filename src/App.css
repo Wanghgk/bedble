@@ -1,3 +1,8 @@
+@font-face {
+  font-family: NotoSansSC-Bold;
+  src: url(./fonts/NotoSansSC-Bold.otf);
+}
+
 .app {
   width: 100vw;
   height: 100vh;
@@ -9,20 +14,43 @@
 
 .app-header {
   width: 100vw;
-  height: 10vh;
+  height: 5vh;
   background-color: rgba(81, 85, 128, 0.5);
 }
 
 .app-body {
   width: 100vw;
-  height: 90vh;
+  height: 85vh;
   overflow-y: scroll;
+}
+
+.app-footer-link {
+  width: 80vw;
+  height: 10vh;
+  /*border-radius: 5vh;*/
+  background-color: rgba(46, 57, 218, 0.5);
+}
+
+.app-footer a{
+  display: block;
+  width: 80vw;
+  margin: auto;
+  border-radius: 5vh;
+  overflow: hidden;
 }
 
 .app-footer {
   width: 100vw;
-  height: 10vh;
-  background-color: rgba(0,0,0,0.5);
+  background: rgba(40, 149, 216, 0.3);
+  text-align: center;
+}
+
+.app-footer span {
+  color: #aaaaff;
+  line-height: 9vh;
+  font-size: 5vh;
+  font-weight: bolder;
+  font-family: NotoSansSC-Bold, sans-serif;
 }
 
 .app-body::-webkit-scrollbar {

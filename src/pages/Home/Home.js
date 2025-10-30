@@ -29,6 +29,8 @@ export default function Home() {
             // ESP32_LED_ID.current = await connectDevice("ESP32_LED", [0xFF10]);
             await connectDevice("ESP32_LED", [0xFF10]);
 
+            await connectDevice("ESP32_CHAR_LED", [0xFF10]);
+
             // 你可以在这里定义要连接的服务UUID列表
             // const targetServices = [
             //     { name: "ESP32_LED", serviceUUIDs: [0xFF10] },
@@ -68,10 +70,8 @@ export default function Home() {
     return (
         <div className={Style["home"]}>
             <div className={Style["cards-list"]}>
-                <HomeCard title="Home Card" image={"./images/芙芙.jpg"} url={"deskled"} id={"ESP32_LED"}/>
-                <HomeCard title="Home Card" image={"./images/芙芙.jpg"} url={"deskled"} id={"ESP32_LED"}/>
-                <HomeCard title="Home Card" image={"./images/芙芙.jpg"} url={"deskled"} id={"ESP32_LED"}/>
-                <HomeCard title="Home Card" image={"./images/芙芙.jpg"} url={"deskled"} id={"ESP32_LED"}/>
+                <HomeCard title="桌面LED" image={"./images/芙芙.jpg"} url={"deskled"} id={"ESP32_LED"}/>
+                <HomeCard title="8*32LED点阵" image={"./images/芙芙.jpg"} url={"charled"} id={"ESP32_CHAR_LED"}/>
             </div>
             <div className={Style["connect-box"]}>
                 <button

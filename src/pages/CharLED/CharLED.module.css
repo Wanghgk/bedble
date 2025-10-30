@@ -1,0 +1,61 @@
+.preset-container {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: center;*/
+    align-items: center;
+    gap: 5vw;
+    width: 66vw;
+    margin: auto;
+    margin-top: 3vh;
+    height: 82vh;
+    overflow-y: scroll;
+    text-align: center;
+    user-select: none;
+}
+
+.preset-container span {
+    font-size: 2vh;
+    color: #cbf1e7;
+}
+
+.preset-container::-webkit-scrollbar {
+    display: none;
+}
+
+.preset-item {
+    display: block;
+    width: 30vw;
+    height: 10vw;
+}
+
+.preset-image {
+    width: 30vw;
+    height: 7.5vw;
+    border-radius: 6px;
+    /*border: 2px solid #fff;*/
+    cursor: pointer;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    transition: transform 0.1s ease;
+    margin: auto;
+}
+
+.preset-image:hover {
+    transform: scale(1.1);
+}
+
+/* 🔹 响应式布局：手机屏幕下滑块缩小 */
+/*@media (max-width: 600px) {*/
+/*    .slider-group {*/
+/*        gap: 15px;*/
+/*    }*/
+/*    .slider-wrapper {*/
+/*        width: 50px;*/
+/*    }*/
+/*    .slider-wrapper input[type="range"] {*/
+/*        height: 140px;*/
+/*    }*/
+/*    .preset-color {*/
+/*        width: 36px;*/
+/*        height: 36px;*/
+/*    }*/
+/*}*/
