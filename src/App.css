@@ -3,13 +3,22 @@
   src: url(./fonts/NotoSansSC-Bold.otf);
 }
 
+.blur-background {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(15px);
+  background: url("../public/images/body-background.png");
+  background-size: cover;
+  z-index: -1;
+}
+
 .app {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
-  background: url("../public/images/body-background.png");
-  background-size: cover;
+  z-index: 10;
 }
 
 .app-header {

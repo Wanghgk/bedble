@@ -1,11 +1,11 @@
 .deskled-container {
     font-family: "Arial", sans-serif;
     text-align: center;
-    padding: 15px;
+    padding: 0 15px;
     background-color: rgba(40, 149, 216, 0.3);
     border-radius: 10px;
     /*max-width: 480px;*/
-    margin: auto;
+    margin:0;
     height: 85vh;
 }
 
@@ -24,10 +24,14 @@
     align-items: center;
     gap: 1vh;
     margin: 0;
-    margin-top: 3vh;
+    margin-top: 2vh;
     margin-bottom: 2vh;
     height: 50vh;
     touch-action: pan-x;
+    background: rgba(156, 163, 175, 0.4);
+    padding: 5vw;
+    border: 1vw solid white;
+    border-radius: 6vw;
 }
 
 .slider-wrapper {
@@ -95,10 +99,13 @@
     justify-content: center;
     gap: 5vw;
     /*margin-top: 20px;*/
-    height: 30vh;
+    height: 19vh;
     overflow-y: scroll;
     text-align: center;
     user-select: none;
+    padding: 2vw;
+    border: 1vw solid #fff;
+    border-radius: 3vw;
 }
 
 .preset-container::-webkit-scrollbar {

@@ -38,15 +38,17 @@ export default function CharLED() {
         <div className={Style["deskled-container"]}>
             <div className={Style["preset-container"]}>
                 {presetColors.map((c, i) => (
-                    <div className={Style["preset-item"]} key={c.name}>
+                    <div className={Style["preset-item"]} key={c.name}
+                         onClick={() => applyPreset(c.image_index, c.delay)}
+                    >
                         <div
                             key={i}
                             className={Style["preset-image"]}
                             style={{background: c.background, backgroundSize: "cover"}}
-                            onClick={() => applyPreset(c.image_index, c.delay)}
                             title={c.name}
                         ></div>
                         <span>{c.name}</span>
+                        <span>帧间隔：{c.delay / 10}s</span>
                     </div>
                 ))}
             </div>

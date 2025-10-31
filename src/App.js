@@ -13,6 +13,7 @@ function App() {
 
     return (
         <BleManagerProvider>
+            <div className="blur-background"></div>
             <div className={"app"}>
                 <div className="app-header">
                 </div>
